@@ -10,9 +10,11 @@ public class InnocentPrey {
 	}
 	
 	public void die() {
-		System.out.println("Blood");
-		alive = false;
-		mass = 0;
+		if(alive) {
+			System.out.println("Blood");
+			alive = false;
+			mass = 0;
+		}
 	}
 	
 	public double getMass() { return mass; }
